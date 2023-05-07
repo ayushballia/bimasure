@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
   font-family: neuropol;
   src: url(neuropol.otf);
@@ -12,11 +12,19 @@
     padding: 0;
 }
 
+.hidden {
+    display: none;
+}
 body {
     box-sizing: border-box;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: 'Poppins', sans-serif;
 }
 
+hr {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+}
 .navigation {
     background: rgb(19,161,223);
 background: linear-gradient(0deg, rgba(19,161,223,1) 0%, rgba(3,102,178,1) 36%);
@@ -32,7 +40,6 @@ background: linear-gradient(0deg, rgba(19,161,223,1) 0%, rgba(3,102,178,1) 36%);
 }
 
 .nav-link {
-
     width: 100%;
     height: 70px;
     border-radius: 23px;
@@ -93,6 +100,63 @@ background-color: #13a1df;
     background-color: white;
     border-left: 2px solid #1b9a8f;
     animation: animate 4s steps(12) infinite;
+}
+
+
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0366B2;
+    min-width: 200px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 15px 1px;
+    text-decoration: none;
+    display: block;
+    line-height: 1;
+  }
+
+  
+  .show {display: block;}
+
+
+  .product-heighlight {
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #e5e5e5;
+    color: black;
+  }
+
+  .hinsurance {
+    background: radial-gradient(115.63% 228.65% at 0% 0%, #13A1DF 0%, #0366B2 45.18%, #1B9A8F 64.13%, #0366B2 71.92%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    color: white;
+  }
+
+  .hinsurance h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.hinsurance p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 300;
+}
+.hinsurance p:last-child {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    font-weight: 300;
 }
 
 @keyframes animate {
@@ -192,4 +256,61 @@ background-color: #13a1df;
     background: -webkit-linear-gradient(#0366b2, #13a1df);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#about {
+    background: linear-gradient(106.06deg, #0366B2 14.58%, #1B9A8F 100%);
+    color: white;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: neuropol;
+}
+
+#about p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+#contact h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: neuropol;
+}
+
+#contact .detail{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.detail p {
+    margin-bottom: 0 !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.detail a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.addressHeading {
+    font-size: 1.8rem !important;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width: 480px) {
+    .nav-link {
+        display: none !important;
+    }
+    nav {
+        display: none;
+    }
 }
