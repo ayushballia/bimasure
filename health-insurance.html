@@ -15,58 +15,57 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <header>        
-          <div class="navigation">
-            <div class="col-md-3">
-              <div class="logo">
-                <a href="index.html"><img src="src/logo.png" alt="Bimasure_Logo" width="300px" height="70px"></a>
-              </div>
-            </div>
-            <nav class="col-md-7 nav-link">
-              <ul row>
-                <li class="col-md-3 link-item"><a href="index.html">Home</a></li>
-                <li class="col-md-3 link-item"><a href="about.html">About us</a></li>
-                <li class="col-md-3 link-item dropdown">
-                  <a onclick="dropdownClick()" class="dropbtn" href="#">insurance</a>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="health-insurance.html">health insurance</a>
-                    <a href="#about">claim & re-investment</a>
-                  </div>                  
-                </li>
-                <li class="col-md-3 link-item"><a href="contact.html">Contact us</a></li>
-              </ul>
-            </nav>
-            <div class="col-md-2">
-              <p>Get Quote</p>
-            </div>
-          </div>        
-    </header>
+  <header class="header">
+    <a href="index.html"><img src="src/logo.png" alt="" width="300px"></a>
+    <div class="menu-btn my-4">
+      <div class="menu-btn__lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="index.html" class="menu-item">home</a></li>
+      <li><a href="about.html" class="menu-item">about us</a></li>
+      <li class="dropdown">
+        <a onclick="dropdownClick()" class="dropbtn" href="insurance.html">insurance</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="health-insurance.html">health insurance</a>
+          <a href="#about">claim & re-investment</a>
+        </div>                  
+      </li>
+      <li><a href="contact.html" class="menu-item">contact us</a></li>
+      <li><a href="#" class="menu-item">get quotes</a></li>
+    </ul>
+  </header>
 
-    <main class="hinsurance">
+    <main class="hinsurance" style="margin-top: 5rem;">
         <div class="container">
             <div class="row">
-                <h1 class="text-center py-4">health insurance</h1>
-                <p>A health insurance policy is a contract between a policyholder and an insurance company, in which
+                <h1 class="py-2 display-5">health insurance : your comprehensive guide</h1>
+                <h2 class="py-2 display-6">What is health insurance ?</h2>
+                <p class="lead">A <b>health insurance</b> policy is a contract between a policyholder and an insurance company, in which
                     the insurer provides financial assistance for medical expenses in exchange for a premium. The
                     policyholder can either opt for reimbursement for medical expenses such as hospital and surgical
                     bills or utilize the cashless claim feature. With the cashless claim feature, the policyholder can
                     receive treatment at a network hospital without worrying about payments as the insurance
                     company and the hospital have an association to settle the bills.
-                    </p>
-                    <p>To find the best health insurance plan, you can compare multiple policies online. Purchasing health
-                        insurance online allows you to select the one that meets your specific requirements.</p>
+                    
+                    
+                    <span id="dots">...</span><span id="more">
+                      <br>
+                    To find the best health insurance plan, you can compare multiple policies online. Purchasing health
+                        insurance online allows you to select the one that meets your specific requirements.</p></span>
+                        <button id="readmore" type="button" class="btn btn-light" onclick="readmore()">Read more...</button>
             </div>
             <div class="row">
-                <h2 class="text-center">product highlight</h2>
-                <div class="col-12 product-heighlight">
-                    <p>Buy Health insurance plan with 
+                <h2 class="text-center display-6 py-2">product highlights</h2>
+                <div class="col-12 product-heighlight py-3 rounded">
+                    <p class="text-center mx-2 lead bg-primary-subtle bg-gradient rounded">Buy Health insurance plan with 
                     </p>
-                    <p>Cover ranging from Rs.1 lac to 1 crore</p>
-                    <p> Covers Pre Existing Diseases for 1-4 Year/s - choices available
+                    <p class="text-center mx-2 lead rounded bg-success-subtle bg-gradient"> Multiple Insurance & Best Health Insurance Plans to Compare</p>
+                    <p class="text-center mx-2 lead rounded bg-danger-subtle bg-gradient">Cover ranging from Rs.1 lac to 1 crore</p>
+                    <p class="text-center mx-2 lead rounded bg-warning-subtle bg-gradient"> Covers Pre Existing Diseases for 1-4 Year/s - choices available
                     </p>
-                    <p> No Room Rent cappings and - Single Private Room for Patients – choices available
+                    <p class="text-center mx-2 lead rounded bg-info-subtle bg-gradient">No Room Rent cappings and - Single Private Room for Patients - choices available
                     </p>
-                    <p> Multiple Insurance & Best Health Insurance Plans to Compare</p>
+                    
                 </div>
             </div>
         </div>

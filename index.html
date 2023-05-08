@@ -15,7 +15,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <header>        
+  <header class="header">
+    <a href="index.html"><img src="src/logo.png" alt="" width="300px"></a>
+    <div class="menu-btn my-4">
+      <div class="menu-btn__lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="index.html" class="menu-item">home</a></li>
+      <li><a href="about.html" class="menu-item">about us</a></li>
+      <li class="dropdown">
+        <a onclick="dropdownClick()" class="dropbtn" href="insurance.html">insurance</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="health-insurance.html">health insurance</a>
+          <a href="#about">claim & re-investment</a>
+        </div>                  
+      </li>
+      <li><a href="contact.html" class="menu-item">contact us</a></li>
+      <li><a href="#" class="menu-item">get quotes</a></li>
+    </ul>
+  </header>
+    <!-- <header>        
           <div class="navigation">
             <div class="col-md-3">
               <div class="logo">
@@ -23,7 +42,7 @@
               </div>
             </div>
             <nav class="col-md-7 nav-link">
-              <ul row>
+              <ul>
                 <li class="col-md-3 link-item"><a href="index.html">Home</a></li>
                 <li class="col-md-3 link-item"><a href="about.html">About us</a></li>
                 <li class="col-md-3 link-item dropdown">
@@ -40,9 +59,9 @@
               <p>Get Quote</p>
             </div>
           </div>        
-    </header>
+    </header> -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="margin-top: 5rem;">
       <div class="row pt-2 pb-4">
         <div class="col-lg-1"></div>
         <div class="col-lg-10">

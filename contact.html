@@ -17,32 +17,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <header>        
-          <div class="navigation">
-            <div class="col-md-3">
-              <div class="logo">
-                <a href="index.html"><img src="src/logo.png" alt="Bimasure_Logo" width="300px" height="70px"></a>
-              </div>
-            </div>
-            <nav class="col-md-7 nav-link">
-              <ul row>
-                <li class="col-md-3 link-item"><a href="index.html">Home</a></li>
-                <li class="col-md-3 link-item"><a href="about.html">About us</a></li>
-                <li class="col-md-3 link-item dropdown">
-                  <a onclick="dropdownClick()" class="dropbtn" href="#">insurance</a>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="health-insurance.html">health insurance</a>
-                    <a href="#about">claim & re-investment</a>
-                  </div>                  
-                </li>
-                <li class="col-md-3 link-item"><a href="contact.html">Contact us</a></li>
-              </ul>
-            </nav>
-            <div class="col-md-2">
-              <p>Get Quote</p>
-            </div>
-          </div>        
-    </header>
+    <header class="header">
+        <a href="index.html"><img src="src/logo.png" alt="" width="300px"></a>
+        <div class="menu-btn my-4">
+          <div class="menu-btn__lines"></div>
+        </div>
+        <ul class="menu-items">
+          <li><a href="index.html" class="menu-item">home</a></li>
+          <li><a href="about.html" class="menu-item">about us</a></li>
+          <li class="dropdown">
+            <a onclick="dropdownClick()" class="dropbtn" href="insurance.html">insurance</a>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="health-insurance.html">health insurance</a>
+              <a href="#about">claim & re-investment</a>
+            </div>                  
+          </li>
+          <li><a href="contact.html" class="menu-item">contact us</a></li>
+          <li><a href="#" class="menu-item">get quotes</a></li>
+        </ul>
+      </header>
     
     <main id="contact">
         <div class="container">

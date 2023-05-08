@@ -15,53 +15,46 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <header>        
-          <div class="navigation">
-            <div class="col-md-3">
-              <div class="logo">
-                <a href="index.html"><img src="src/logo.png" alt="Bimasure_Logo" width="300px" height="70px"></a>
-              </div>
-            </div>
-            <nav class="col-md-7 nav-link">
-              <ul row>
-                <li class="col-md-3 link-item"><a href="index.html">Home</a></li>
-                <li class="col-md-3 link-item"><a href="about.html">About us</a></li>
-                <li class="col-md-3 link-item dropdown">
-                  <a onclick="dropdownClick()" class="dropbtn" href="#">insurance</a>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="health-insurance.html">health insurance</a>
-                    <a href="#about">claim & re-investment</a>
-                  </div>                  
-                </li>
-                <li class="col-md-3 link-item"><a href="contact.html">Contact us</a></li>
-              </ul>
-            </nav>
-            <div class="col-md-2">
-              <p>Get Quote</p>
-            </div>
-          </div>        
-    </header>
+  <header class="header sticky-top">
+    <a href="index.html"><img src="src/logo.png" alt="" width="300px"></a>
+    <div class="menu-btn my-4">
+      <div class="menu-btn__lines"></div>
+    </div>
+    <ul class="menu-items">
+      <li><a href="index.html" class="menu-item">home</a></li>
+      <li><a href="about.html" class="menu-item">about us</a></li>
+      <li class="dropdown">
+        <a onclick="dropdownClick()" class="dropbtn" href="insurance.html">insurance</a>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="health-insurance.html">health insurance</a>
+          <a href="#about">claim & re-investment</a>
+        </div>                  
+      </li>
+      <li><a href="contact.html" class="menu-item">contact us</a></li>
+      <li><a href="#" class="menu-item">get quotes</a></li>
+    </ul>
+  </header>
 
-    <main>
+    <main style="margin-top: 5rem;">
         <section id="about">
             <div class="container">
                 <div class="row">
                     <div class="col text-center py-5">
-                        <h1>About us</h1>
-                        <p>
+                        <h1 class="display-4">About us</h1>
+                        <p class="lead">
                             We are dedicated to providing the best insurance options for our customers. Through our platform 
                             we aim to service more than 9 million insurance buyers and over 50 insurers who transact a few lakh 
                             crores of insurance cover and a few thousand crores of insurance premium every year. We pride 
                             ourselves on providing a secure and reliable platform for our customers to confidently choose the 
                             insurance coverage that best meets their needs.
                         </p>
-                        <p style="font-size: 1.5rem; font-weight: 300;">
+                        <p class="lead">
                             Our founders had one objective: to bring transparency to insurance. They started by simplifying plan 
                             information, preventing mis-selling and policy lapses, and reimagining the insurance industry. Today, 
                             we continue to prioritize transparency and empower our customers to make informed decisions 
                             about their coverage.
                         </p>
-                        <p style="font-size: 1.5rem; font-weight: 300;">
+                        <p class="lead">
                             We are proud of the changes we have made to the insurance industry, but we know there is more 
                             work to do. Our goal is to bring innovative technologies to the field and provide a health and 
                             financial safety net for more households in India.
