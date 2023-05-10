@@ -336,12 +336,21 @@ background-color: #13a1df;
     font-weight: 400;
 }
 
+.last-box {
+  width: 50%;
+  margin: 0 auto;
+}
+
 
 
 
 
 /** For mobile devices **/
-@media (max-width: 767px) {  
+@media (max-width: 767px) {
+  
+  .last-box {
+    width: 100% !important;
+  }
     .header a {
       font-size: 1rem;
     }  
