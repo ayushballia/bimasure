@@ -126,10 +126,7 @@ background-color: #13a1df;
 .landing-heading {
     text-align: center;
     text-transform: capitalize;
-}
-
-.landing-heading h1 {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .text {
@@ -347,6 +344,10 @@ background-color: #13a1df;
 
 /** For mobile devices **/
 @media (max-width: 767px) {
+
+  .landing-heading {
+    overflow: hidden;
+  }
   
   .last-box {
     width: 100% !important;
