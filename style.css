@@ -399,4 +399,5 @@ background: linear-gradient(0deg, rgba(19,161,223,1) 0%, rgba(3,102,178,1) 36%);
 
   .list-group {
     text-transform: capitalize;
+    max-width: 400px;
   }
