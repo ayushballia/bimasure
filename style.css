@@ -1,5 +1,9 @@
 :root {
-  --primary-color: #0662b3;
+  --blue-color: #0662b3;
+  --lightBlue: #cfe2ff;
+  --green-color: #1b9a8f;
+  --lightGreen: #d1e7dd;
+
 }
 
 
@@ -22,6 +26,30 @@
 h1,h2,h3,h4,h5,h6 {
     text-transform: capitalize;
 }
+
+#health {
+  font-size: 1.5rem;
+}
+
+#health li {
+  font-weight: normal;
+}
+
+.inclution i {
+  color: var(--blue-color);
+  background: var(--lightBlue);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+.exclusions i {
+  color: var(--green-color);
+  background: var(--lightGreen);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
 
 #policy {
   text-align: center;
@@ -416,3 +444,9 @@ background-color: #13a1df;
   }
   
 
+
+/* claims */
+
+#claims {
+  margin-top: 6rem;
+}
