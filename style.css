@@ -222,7 +222,10 @@ background-color: #13a1df;
   }
 
   
-  .show {display: block;}
+  .show {
+    display: block;
+    width: 100%;
+  }
 
 
   .product-heighlight {
@@ -388,6 +391,34 @@ background-color: #13a1df;
 }
 
 
+.social-links i {
+  font-size: 2rem;
+  padding-inline: .5rem;
+}
+
+footer {
+  background-color: var(--green-color);
+  color: white;
+}
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.health-insurance {
+  display: flex;
+  flex-direction: column;
+}
+
+.life-insurance {
+  display: flex;
+  flex-direction: column;
+}
+
+.important-links {
+  display: flex;
+  flex-direction: column;
+}
 
 /** For mobile devices **/
 @media (max-width: 767px) {
