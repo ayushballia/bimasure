@@ -42,18 +42,34 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .inclution i {
-  color: var(--blue-color);
-  background: var(--lightBlue);
-  padding: 0.5rem;
-  border-radius: 50%;
-  font-size: 1.2rem;
-}
-.exclusions i {
   color: var(--green-color);
   background: var(--lightGreen);
   padding: 0.5rem;
   border-radius: 50%;
   font-size: 1.2rem;
+}
+
+.exclusions .background {
+  background-image: url(src/caduceus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.exclusions li {
+  display: flex;
+  line-height: 1.2;
+  
+}
+
+.exclusions i {
+  color: var(--blue-color);
+  background: var(--lightBlue);
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  height: 35px;
+  margin: auto 5px;
 }
 
 
@@ -73,6 +89,30 @@ body {
     box-sizing: border-box;
     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
     font-family: 'Poppins', sans-serif;
+}
+
+
+.colorChangeGradient {
+  background-color: #000;
+  background-image: linear-gradient(to right, lightgreen 0%, #006dba 30%, rgb(0, 0, 0) 50%, var(--green-color) 60%, green 80%);
+  background-size: 200% auto;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 2s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 
@@ -398,7 +438,16 @@ background-color: #13a1df;
 .social-links i {
   font-size: 2rem;
   padding-inline: .5rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
 }
+
+.social-links i:hover {
+  color: white !important;
+  background-color:var(--blue-color);
+}
+
 .support a {
   font-size: 1.4rem;
   padding-inline: .5rem;
@@ -469,11 +518,40 @@ footer a {
 .fa-instagram {
   font-size: 72px;
   background: -webkit-linear-gradient(#405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  background-color: white;
+}
+
+.fa-instagram:hover {
+  background: var(--blue-color);
+}
+
+.inclution {
+  background: url(src/10-150ppp.jpg);
+  background-position: 100% 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.inclution ul li {
+}
+
+.hinsurance {
+  background: #eff8f5;
 }
 /** For mobile devices **/
 @media (max-width: 767px) {
+
+  .inclution {
+    background: none;
+  }
+
+  .exclusions .col-4 {
+    display: none;
+  }
 
   footer {
     height: 100%;
